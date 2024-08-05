@@ -179,15 +179,49 @@ nav a {
     height: 450px;
 }
 
-#Tools {
+##Tools {
   background-color: #EBBBCB !important;
+  padding: 50px 0;
+}
+
+#Tools .row {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#Tools .col-4 {
+  text-align: center;
 }
 
 #Tools img {
-      width: 50px; 
-      height: auto;
-      margin: 50px; 
+  width: 50px;
+  height: auto;
+  margin: 15px 0;
+  transition: transform 0.2s ease-in-out;
+}
+
+#Tools img:hover {
+  transform: scale(1.1);
+}
+
+#Tools h5 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4D4D4D;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #Tools .col-4 {
+    margin-bottom: 30px;
   }
+  
+  #Tools img {
+    width: 40px;
+  }
+}
 
 footer {
    background: #D68BA4;
