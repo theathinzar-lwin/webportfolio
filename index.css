@@ -31,10 +31,9 @@ nav a {
         rgba(0, 0, 0, 0.59),
         rgba(0, 0, 0, 0.59)
     ),
-    url("./images/banner.png");
-    background-repeat: no-repeat;
+    url("./images/banner.png") no-repeat;
     background-size: cover;
-    ;
+    height: 100vh;
 }
 
 #title {
@@ -102,7 +101,7 @@ nav a {
    line-height: 49px;
    text-align: center;
 
-  color: #4D4D4D;
+  color: #000000;
 }
 
 #contact-icon img {
@@ -119,7 +118,7 @@ nav a {
    line-height: 24px;
    text-align: left;
 
-   color: #4D4D4D;
+   color: #000000;
 }
 
 #contact form input {
@@ -170,13 +169,13 @@ nav a {
    font-size: 40px;
    font-weight: 600;
    line-height: 49px;
-   text-align: left;
+   text-align: center;
 
-    color: #4D4D4D;
+    color: #000000;
 }
 
 .map-container iframe {
-    width: 450px;
+    width: 300px;
     height: 450px;
 }
 
@@ -236,4 +235,26 @@ footer {
    color: #FFFFFF;
 }
 
+
+@media (max-width: 576px) {
+    #navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+    #landing h1 {
+        font-size: 2rem;
+    }
+    #projects .card {
+        margin-bottom: 2rem;
+    }
+    /* Adjust padding for smaller screens */
+    #contact .form-group {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #landing .row {
+        align-items: center;
+    }
+}
 
